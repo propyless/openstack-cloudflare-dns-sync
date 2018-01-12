@@ -206,7 +206,7 @@ This is a tool for creating and updating OpenStack instances into cloudflare DNS
   parser.add_argument('--hostname-format', action='store', dest='hostname_format', default='ip',
                      help='This is the format in which the hostname for the subdomain will be created. ip: 192-168-1-1.vms.local.tld. name: instancename.vms.local.tld. Default is "ip".')
   parser.add_argument('--purge-missing', action='store_true', dest='purse_missing', default=False,
-                     help='Delete any DNS entries which no longer exist in OpenStack'
+                     help='Delete any DNS entries which no longer exist in OpenStack')
 
   # Add argument parser group for cloudflare opts
   cf_args = parser.add_argument_group('CloudFlare arguments')
